@@ -338,6 +338,7 @@ class SocialCubit extends Cubit<SocialStates> {
         emit(SocialGetComuntScucessState());
       });
     } on Exception catch (e) {
+      debugPrint(e.toString());
       emit(SocialGetComuntrErorrState());
     }
     // .catchError((error) {
